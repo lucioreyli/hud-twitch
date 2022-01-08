@@ -21,17 +21,17 @@ export const Home = () => {
     socket.on('last_follower', (nickname: string) => {
       setLastFollower(nickname)
       // if (nickname != lastFollower) {
-      setInterval(() => {
-        lastFollowerAnimation.start(() => ({ scale: [1, 1.6, 0.8, 1] }))
-        setTimeout(() => {
-          locked1.start(() => ({ rotate: [15, -15, 15, -15, 0] }))
-        }, 1000);
-        setTimeout(() => {
-          locked2.start(() => ({ rotate: [15, -15, 15, -15, 0] }))
-        }, 2300);
-      }, 10000)
       // }
     })
+    setInterval(() => {
+      lastFollowerAnimation.start(() => ({ scale: [1, 1.6, 0.8, 1] }))
+      setTimeout(() => {
+        locked1.start(() => ({ rotate: [15, -15, 15, -15, 0] }))
+      }, 1000);
+      setTimeout(() => {
+        locked2.start(() => ({ rotate: [15, -15, 15, -15, 0] }))
+      }, 2300);
+    }, 10000)
 
     socket.on('last_subscribe', (nickname: string) => {
       if (nickname != lastFollower) {
