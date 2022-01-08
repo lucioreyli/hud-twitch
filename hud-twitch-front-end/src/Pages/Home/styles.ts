@@ -60,7 +60,5 @@ font-size: 32px;
 export const AnimatedSocialsContainer = styled(motion.div)`
   display: flex;
   flex-direction: column;
-  
-  /* gap: 3rem; */
 
 `
