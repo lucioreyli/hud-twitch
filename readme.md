@@ -33,12 +33,14 @@ Baixe ou clone o [repositório](https://github.com/lucioroadtoglory/hud-twitch) 
 
 ```
   gh repo clone lucioroadtoglory/hud-twitch
+  
 ```
 
 ou
 
 ```
   git clone https://github.com/lucioroadtoglory/hud-twitch
+  
 ```
 
 ou [download](https://github.com/lucioroadtoglory/hud-twitch/archive/refs/heads/main.zip).
@@ -60,4 +62,5 @@ e
 ```
   yarn
   yarn dev
+  
 ```
